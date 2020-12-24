@@ -35,9 +35,8 @@ def echo(update, context):
 
 
 # buttons
-
+"""
 def button(buttons, n_cols, header_buttons=None, footer_buttons=None):
-
     for i in range(0, len(buttons), n_cols):
         menu = [buttons[i:i + n_cols]]
         if header_buttons:
@@ -46,10 +45,9 @@ def button(buttons, n_cols, header_buttons=None, footer_buttons=None):
             menu.append(footer_buttons)
         return menu
 
-
+"""
 # /test  message
 def test(update, context):
-
     print(update.message.chat.username)
     t = "test!"
     context.bot.send_message(chat_id=update.message.chat_id, text=t)
@@ -57,14 +55,19 @@ def test(update, context):
     t1 = "test 1 or test 2"
     context.bot.send_message(chat_id=update.message.chat_id, text=t1)
     time.sleep(0.3)
+    """
     show_list = [InlineKeyboardButton("test1", callback_data="test1"),
                  InlineKeyboardButton("test2", callback_data="test2")]
-    # show_markup = InlineKeyboardMarkup(button(show_list, len(show_list) - 1))
+
+    show_markup = InlineKeyboardMarkup(button(show_list, len(show_list) - 1))
+
     reply_markup = InlineKeyboardMarkup(show_list)
     query.edit_message_text(
         text="Choose a route", reply_markup=reply_markup
     )
+
     # context.bot.send_message("select", reply_markup=show_markup)
+    """
 
 
 # callback
