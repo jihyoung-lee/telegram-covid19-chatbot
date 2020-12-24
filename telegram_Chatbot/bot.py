@@ -14,7 +14,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # token
-token = "1420258828:AAH8tGeVR00zwDwKm0nAnBQEl9mu1UpAIyE"
+token = ""
 
 
 # start message
