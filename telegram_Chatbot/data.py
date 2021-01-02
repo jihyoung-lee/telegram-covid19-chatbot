@@ -1,10 +1,5 @@
 import urllib.request
-from urllib.parse import quote
 from bs4 import BeautifulSoup
-import requests
-import json
-import pandas as pd
-from io import BytesIO
 import datetime
 
 # 현재시간
@@ -13,7 +8,7 @@ nowdate = now.strftime('%Y%m%d')  # 시간형식 변경
 nowdate2 = now.strftime('%Y년 %m월 %d일')
 # api 요청
 
-ServiceKey = ''
+ServiceKey =''
 pageNo = 1
 numOfRows = 1
 startCreateDt = int(nowdate)

@@ -1,13 +1,8 @@
-from lib2to3.fixes.fix_input import context
 
-import requests
-import json
-import datetime
 import time
 import logging
-import telegram
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler, CallbackContext
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, update
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram import Update
 from Toyproject.telegram_Chatbot.data import gubun_list, incDec_list, defCnt_list, nowdate2
 
 # bot info
